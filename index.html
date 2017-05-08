@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>South Park Crystal Game</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!--Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="head"><h1>South Park Game</h1>
+  </div>
+
+   <div id="paragraph">
+      <strong><p>You will be given a random number at the start of the game.<br><br>
+
+    There are four South Park characters below. By clicking on a character you will add a specific amount of points to your total score.<br><br>
+
+    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<br><br>
+
+    The value of each character is hidden from you until you click on it.<br><br>
+
+    Each time when the game starts, the game will change the values of each character.<br><br>
+      </p></strong>
+    </div>
+
+    <div id="guess"><strong><u>Number to hit!</u></strong>
+    </div>
+
+    <div id="computerScore">
+      <span id="compNum"><p><strong><br>0</strong></p></span>
+    </div>
+
+    <div id="gameCounter">
+          <span id="win"><h4><strong>Wins:</strong></h4><span id="winCount"><h4>0</h4></span></span>
+          <span id="lose"><h4><strong>Losses:</strong></h4><span id="loseCount"><h4>0</h4></span></span>
+          <span id="message"></span>
+    </div>
+
+
+  <div class="southpark">
+    <button id="cartman"><img src="assets/images/cartman.jpg" alt="eric/cartman" width="90" height="90"></button>
+    <button id="kenny"><img src="assets/images/Kenny.png" alt="kenny/mccormick" width="90" height="90"></button>
+    <button id="stan"><img src="assets/images/Stan_Marsh.jpg" alt="stan/marsh" width="90" height="90"></button>
+    <button id="kyle"><img src="assets/images/kyle.jpg" alt="kyle/broflowski" width="90" height="90"></button>
+  </div>
+
+
+    <div id="scoreCount">
+          <h3>Total score:</h3>
+          <span id="scoreNum">
+           <h3>0</h3>
+          </span>
+    </div>
+
+    <div>
+    <button id="reloadwin" class="btn btn-info btn-lg" onClick="window.location.reload()">Play Again?</button>
+  <div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
+
